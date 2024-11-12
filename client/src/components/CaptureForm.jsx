@@ -6,7 +6,7 @@ const CaptureForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('/api/capture-url', {
+        const response = await fetch('http://localhost:5500/api/capture-url', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
